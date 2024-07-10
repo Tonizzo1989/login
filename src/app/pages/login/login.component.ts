@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class LoginComponent {
 
-  isLoginView: boolean = false;
+  isLoginView: boolean = true;
 
 
   userRegisterObject: any = {

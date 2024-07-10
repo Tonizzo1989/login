@@ -1,37 +1,36 @@
 /* Styling per il form di login */
 form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #f8f9fa;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  }
-  
-  .form-label {
-    font-weight: 600;
-  }
-  
-  .form-control {
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-  }
-  
-  .form-check-label {
-    margin-left: 1.25rem;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
-  }
-  
-  .form-text {
-    color: #6c757d;
-  }
-  
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.form-check-label {
+  margin-left: 1.25rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.form-text {
+  color: #6c757d;
+}
