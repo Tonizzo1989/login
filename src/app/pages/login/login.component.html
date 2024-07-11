@@ -4,16 +4,13 @@ in caso contrario è obbligato a registrarsi con email e password.
 -->
 @if (isLoginView) {
 
+  <!-- Log In form -->
+
 <form>
   <h3 class="bold mb-3 pb-3" style="letter-spacing: 1px">Log in</h3>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"> User Name </label>
-    <input
-      type="email"
-      class="form-control"
-      id="exampleInputEmail1"
-      aria-describedby="emailHelp"
-    />
+    <input type="email" class="form-control"id="exampleInputEmail1"aria-describedby="emailHelp"/>
     <div id="emailHelp" class="form-text">
       We'll never share your email with anyone else.
     </div>
@@ -22,7 +19,7 @@ in caso contrario è obbligato a registrarsi con email e password.
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" />
 
-    <br/>
+    <br />
     <input type="checkbox" class="form-check-input" id="exampleCheck1" />
     <label class="form-check-label" for="exampleCheck1"
       >Keep me connected</label
@@ -55,46 +52,32 @@ in caso contrario è obbligato a registrarsi con email e password.
     <a class="text-muted" href="#!">Forgot password ?</a>
   </p>
 </form>
+
 } @else {
 
+  <!-- Register form -->
 <form>
   <h3 class="bold mb-3 pb-3" style="letter-spacing: 1px">Register</h3>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input
-      type="email"
-      class="form-control"
-      id="exampleInputEmail1"
-      aria-describedby="emailHelp"
-    />
-
-    <div id="emailHelp" class="form-text">
-      We'll never share your email with anyone else.
-    </div>
+    <input name = "emailId" [(ngModel)] ="userRegisterObject.emailId" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+  <div id="emailHelp" class="form-text"> We'll never share your email with anyone else.</div>
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"> User Name </label>
-    <input
-      type="email"
-      class="form-control"
-      id="exampleInputEmail1"
-      aria-describedby="emailHelp"
-    />
+    <input name="userName" [(ngModel)]= "userRegisterObject.userName" type="email" class="form-control" id="exampleInputEmail1"aria-describedby="emailHelp"/>
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" />
+    <input name="password" [(ngModel)]= "userRegisterObject.password" type="password" class="form-control" id="exampleInputPassword1" />
   </div>
+  <button data-mdb-input-init class="btn btn-info btn-lg-block" (click)="onRegister()"> Register </button>
   <div class="mb-3 form-check"></div>
 
-  <p>
-    Don't have any account?
-    <a href="#!" class="link-info" (click)="isLoginView = true"
-      >Create here !</a
-    >
-  </p>
+
+  <p> Don't have any account?<a href="#!" class="link-info" (click)="isLoginView = true"> Create here !</a></p>
 </form>
 
 }
